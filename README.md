@@ -138,15 +138,31 @@ Headline metrics over the 60-month window:
 | Calmar | 0.23 | 0.30 | 0.44 | - |
 | Max drawdown | -77.0% | -73.0% | -33.0% | - |
 
+![Normalized cumulative returns - ETH vs BTC vs NASDAQ-100 vs DXY from a common base of 100](07_normalized_cumulative.png)
+
+![Cumulative return - ETH vs DXY](01_cumulative_returns.png)
+
 A few things stand out:
 
 **1. Raw return is fine. Risk-adjusted return is not.** ETH beat the NASDAQ-100 on cumulative return (+126% vs +95%) but with four times the volatility for an extra 3.4 percentage points of CAGR. The Sharpe ratio of 0.17 is the worst of the four. A NASDAQ-100 investor captured 81% of ETH's CAGR with 25% of the vol, and never had a calendar year worse than -33%.
 
+![Risk-return scatter - ETH sits well below the Capital Market Line](09_risk_return.png)
+
+![Performance metrics table - Sharpe, Sortino, Calmar, drawdown side by side](13_metrics_table.png)
+
+![Rolling volatility and Sharpe ratio over time](04_rolling_vol_sharpe.png)
+
 **2. ETH is not a USD hedge.** The Pearson correlation between ETH and DXY monthly returns is -0.011 with p = 0.934. Statistically indistinguishable from zero. OLS confirms: beta = -0.12, R^2 = 0.0001. The dollar explains essentially nothing about ETH's variance. So the popular "ETH benefits from dollar weakness" framing doesn't show up in this data.
+
+![ETH-DXY correlation dashboard - scatter, rolling correlation, regression](06_correlation_dashboard.png)
 
 **3. ETH and BTC are basically one asset.** Full-period ETH-BTC correlation is 0.766 (p < 0.01). The rolling 12-month correlation averages 0.86 and rarely dips below 0.60. Holding both is a levered position on the same crypto cycle, not real diversification.
 
+![Pairwise correlation heatmap - ETH, BTC, NASDAQ-100, DXY](11_correlation_heatmap.png)
+
 **4. ETH increasingly trades as a tech-equity proxy.** ETH vs NASDAQ-100 correlation is 0.611 (p < 0.05), averaging 0.622 on a 12-month rolling basis. That's persistent across the whole period. The relationship looks structural, not coincidental.
+
+![Rolling 12-month correlations - ETH vs BTC and ETH vs NASDAQ-100](12_rolling_correlations.png)
 
 **5. The 18% CAGR is front-loaded.** Annual breakdown:
 
@@ -160,7 +176,17 @@ A few things stand out:
 
 Strip 2021 out and the rest of the period is roughly flat in real terms. ETH underperformed BTC in 2023 and 2024 (the two most recent bull years). And in 2025 ETH went negative while the NASDAQ-100 was up 20%. So even inside the risk-on bucket, ETH's relative position has weakened.
 
+![Annual returns bar chart - ETH year by year](03_annual_returns.png)
+
+![Annual returns comparison - ETH vs BTC vs NASDAQ-100](08_annual_comparison.png)
+
+![Monthly return heatmap - the spiky, episodic nature of ETH returns](02_monthly_heatmap.png)
+
 **6. Drawdown depth and duration are extreme.** Max drawdown of -77% was June 2022 - peak was around $4,800 in November 2021, trough around $1,050 in June 2022, so a -77% move over ~7 months. Recovery to prior peak was Q1-Q2 2024, so ~18-20 months from the trough. Total time underwater across the 60 months: about 26 months. Drawdowns of 20-40% in 2024-2025 are visible in Plot 5 too, so full peak recovery doesn't mean no further material losses.
+
+![ETH drawdown - underwater chart showing depth and duration](05_drawdown.png)
+
+![Multi-asset drawdown - ETH vs BTC vs NASDAQ-100 bear markets](10_multi_drawdown.png)
 
 My read: ETH was worth holding as a small, cycle-timed allocation if you had the discipline for it. As a core or strategic position, it's hard to justify against BTC or NASDAQ-100 on a risk-adjusted basis over this window. Treat it like a high-beta speculation on the network's continued adoption, size positions to a loss tolerance of 75-80%, and don't expect the macro-hedge story to do work for you.
 
